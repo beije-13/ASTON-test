@@ -1,19 +1,13 @@
-import java.util.Scanner;
-
+import java.util.Arrays;
 
 public class Main
 {
 	public static void main(String[] args) {
-		Scanner in = new Scanner(System.in);
-		System.out.print("Введите строку 1: ");
-        String a = in.nextLine();
-        System.out.print("Введите строку 2: ");
-        String b = in.nextLine();
-        if (a.equals(b)){
-            System.out.println("Строки идентичны");
-        }else{
-            System.out.println("Строки неидентичны");
-        }
-        in.close();
+		int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+		for(int i = 0; i < array.length; i++){
+		    if (array[i] % 2 == 0){
+		        System.out.print(array[i] + " ");
+		    }
+		}
 	}
 }
